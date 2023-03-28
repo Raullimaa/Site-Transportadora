@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+/* cabeçalho */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1400px;
+    border-bottom: 1px solid #888888;
+}
+
+a:visited {
+    color: #454545;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.2rem;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    gap: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    transition: all .2s linear; 
+}
+
+.logo img {
+    width:5rem;
+    height: 2.5rem;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    color: #0900ac;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.logo a:hover {
+    background-color: #888888;
+    cursor: pointer;
+}
+
+/* menu */
+.dropdown-menu{
+    display: flex;
+    gap: 2px;
+}
+
+.dropdown-menu li{
+    width: 200px;
+    height: 50px;
+    list-style: none;
+    z-index: 1;
+}
+
+.dropdown-menu a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #454545;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear; 
+    border-radius: 5px;
+}
+
+.dropdown-menu li:hover > a{
+    background-color: #888888;
+    color: black;
+}
+
+.dropdown-menu li:hover > .dropdown-submenu {
+    display: block;
+}
+
+.dropdown-submenu{
+    margin-top: 1px;
+    display: none;
+}
+
+.dropdown-submenu a{
+    background-color: #ffffff;
+    width: 150%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-size: .8rem;
+    border-left: 8px solid;         
+    border-radius: 0px;
+}
+
+.dropdown-submenu li:hover > a{
+    border-left: 8px #888888;
+}
+
+/* rastrear */
+#rastrear li a{
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#rastrear a:hover {
+    background-color: #03590d8f;
+    color: rgb(7, 211, 7);
+}
+
+/* banner */
+#box-banner {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 1400px;
+}
+
+#img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 400px;
+    width: 1400px;
+}
+
+.imgs {
+   display: flex;
+   transition: transform 0.5s ease-in-out; 
+    transform: translateX(0) ;
+}
+
+#img {
+    object-fit: cover;
+    height: 400px;
+    width: 1400px;
+}
+
+.inform-container {
+    display: flex;
+    align-items: center;
+    background-color: #696969;
+    justify-content: space-around;
+    margin: 0rem 8rem;
+    width: 1400px;
+    height: 200px;
+}
+
+.inform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center; 
+    padding: 50px;
+    gap: 1rem;
+}
+
+.inform i {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.inform img {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* mais informações */
+.more-inform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+    height: 800px;
+    width: 800px;
+    gap: 6rem;
+}
+
+.box-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    min-width: 900px;
+}
+
+.box-info p {
+    font-size: 1.4rem;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.box-info p span {
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    min-width: 1400px;
+}
+
+.footer-img {
+    background-image: url(../img/footer-img.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vw;
+}
+
+.footer-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #9792faae;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer-inf ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footer-inf ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all .2s linear; 
+}
+
+.footer-inf ul li a:hover {
+    color: #040050;
+}
+
+.footer-inf p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
